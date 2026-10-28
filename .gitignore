@@ -1,0 +1,17 @@
+node_modules/
+artifacts/
+cache/
+coverage/
+dist/
+frontend/dist/
+*.tsbuildinfo
+deployments/localhost.json
+.env
+.env.*
+!.env.example
+frontend/.env
+backend/.env
+frontend/.env.local
+demo/documents/*.pdf
+*.log
+.DS_Store
