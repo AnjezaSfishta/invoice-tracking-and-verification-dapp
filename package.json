@@ -1,0 +1,29 @@
+{
+  "name": "invoice-tracker-dapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Auditable invoice registration and workflow dApp",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "demo:seed": "hardhat run scripts/seed-demo.js",
+    "frontend:dev": "npm run dev --workspace frontend",
+    "backend:dev": "npm run dev --workspace backend",
+    "build": "npm run build --workspace frontend && npm run build --workspace backend"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "chai": "^4.5.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "hardhat": "^2.22.17"
+  }
+}
